@@ -106,7 +106,13 @@
 <h1>data di 7 giorni fa: @ff</h1>
 
 @{
-    var ciao =date.DayOfWeek;
+    var ciao = date.DayOfWeek;
 }
 
     <h1>oggi è: @ciao</h1>
+@{
+    DateTime newdate = DateTime.Now;
+    var addmonth = newdate.AddYears(1);
+    var yearlater = addmonth.DayOfWeek;
+}
+<h1>il giorno tra un anno sara: @yearlater</h1>
